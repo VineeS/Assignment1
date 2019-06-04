@@ -19,3 +19,14 @@ print(random.randrange(20, 50, 3))
 # This function takes 3 arguments, beginning number (included in generation),
 # last number (excluded in generation) and step ( to skip numbers in range while selecting).
 
+# Shuffle and Uniform
+List = [1,24,0,22,10,5]
+print("List before shuffling ", List)
+random.shuffle(List)
+print ("The list after shuffling is : ", List)
+print(random.uniform(1,20))
+# 5. shuffle() :- This function is used to shuffle the entire list to randomly arrange them.
+
+# 6. uniform(a, b) :- This function is used to generate a
+# floating point random number between the numbers mentioned in its arguments. It takes two arguments,
+# lower limit(included in generation) and upper limit(not included in generation).
