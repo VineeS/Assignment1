@@ -1,2 +1,2 @@
-# Assignment1
+# Python
 Pyhton repo for while loop
