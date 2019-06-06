@@ -1,17 +1,11 @@
-import math
-max_num = int(input("Max Number"))
-primes = [2]
-test_num = 3
-
-while test_num < max_num:
-    i = 0
-    while primes[i] < math.sqrt(test_num):
-        if (test_num % primes[i]) == 0:
-            test_num += 1
+number = int(input("Enter the number"))
+if number > 1:
+    for i in range(2, number):
+        if number % i == 0:
+            print("not a prime number ")
+            print("number is ", number)
+            print("factor is  : ", i)
             break
-        else:
-            i += 1
     else:
-        primes.append(test_num)
-        test_num += 1
-print(primes)
+        print(number, "is prime")
+

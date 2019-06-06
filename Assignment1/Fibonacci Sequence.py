@@ -9,5 +9,6 @@ while iteration < 20:
     j = k
     iteration = iteration + 1
     print(i)
+   # i, j = j, i+j Assign the value of j and i+j to the variable i and j respectively , simultaneously
 
 print("Fibonacci  series ")
