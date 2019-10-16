@@ -1,0 +1,30 @@
+def SequentialSearch(alist, item):
+    position = 0
+    found = False
+    while position < len(alist) and not found:
+        if alist[position] == item:
+            found = True
+        else:
+            position = position + 1
+        
+    return found
+
+def SortedSeq(alist,target):
+    position = 0
+    found = False
+    while (position < len(alist) and not found):
+        if alist[position] == target:
+            return True
+        if alist[position] != target:
+            position += 1
+        if alist[position] > target:
+            return False
+
+def HashSearch(alist, target):
+    
+
+#alist = [2,4,3,1,5,10,13]
+alist = [1,2,3,4,6]
+#print(SequentialSearch(alist, 11))
+#print(SequentialSearch(alist, 13))
+print(SortedSeq(alist,5))
